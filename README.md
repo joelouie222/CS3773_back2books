@@ -5,7 +5,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Ali Dogru, Ph.D. (github_username) <br />
 
 **Team Name:** <br />
-Team 9: Operation B2B
+Team 9: Operation B2B 
 
 **Team Members:** <br />
 Member (github_username) <br />
@@ -42,8 +42,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ### [Links or Images for Back2Books UML Design]
-<br />
-<br />
+
 ### [Links to Images for Back2Books Website Wireframe]
-<br />
-<br />
+
