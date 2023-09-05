@@ -42,6 +42,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ### [Links or Images for Back2Books UML Design]
+[Lucid Chart UML Design](https://lucid.app/lucidchart/e757000a-b6ba-463e-b2dd-5116d215b983/edit?viewport_loc=-11%2C-11%2C1363%2C1519%2C0_0&invitationId=inv_881b57fb-e7a1-46be-b711-e1423209c161)
 
-### [Links to Images for Back2Books Website Wireframe]
-
+### [Links or Images for Back2Books Website Wireframe]
+[Figma Wirefram](https://www.figma.com/file/3CZV9JxNnTz4GMnEIf0u3d/Back2Books-Wireframe?type=design&node-id=0%3A1&mode=design&t=ZYBhj8Wr3YwOL20S-1)
