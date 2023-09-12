@@ -9,7 +9,7 @@ Team 9: Operation B2B
 
 **Team Members:** <br />
 Member (github_username) (Product Ownder) <br />
-Bernardo Vazquez De La Cruz (Ber-Vazq) (Scrum Master) <br />
+Bernardo Vazquez De La Cruz ([Ber-Vazq](https://github.com/Ber-Vazq)) (Scrum Master) <br />
 Member (github_username) <br />
 Member (github_username) <br />
 Joe Louie Corporal ([joelouie222](https://github.com/joelouie222)) <br />
