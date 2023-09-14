@@ -8,7 +8,7 @@ Ali Dogru, Ph.D. (github_username) <br />
 Team 9: Operation B2B 
 
 **Team Members:** <br />
-Member (github_username) (Product Ownder) <br />
+Kip Roberts-Lemus ([kip-is-tired](https://github.com/kip-is-tired)) (Product Ownder) <br />
 Bernardo Vazquez De La Cruz ([Ber-Vazq](https://github.com/Ber-Vazq)) (Scrum Master) <br />
 Member (github_username) <br />
 Member (github_username) <br />
