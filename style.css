@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/background_image.png);
+}
+
+/* MAIN LAYOUT */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header button {
+    border: none;
+    font-size: 24px;
+    padding: 20px 17px 20px;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'DotGothic16', sans-serif;
+    background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* FORMS */
+
+.register-form {
+    background-color: #3b82f6;
+    margin: 40px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 16px;
+}
+
+.signin-form {
+    background-color: #16a34a;
+    margin: 40px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 16px;
+}
+
+
+
+
+
+
+/* ELEMENTS */
+
+.user-menu {
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+.products {
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+.about-us {
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+.contact-us {
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+
+
+
+
