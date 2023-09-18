@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Back2Books</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    
+    <!-- OUR CSS -->
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body id="home">
+    <div class="container">
     <center>
         <marquee behavior="alternate">
           <h1>The site is currently under construction</h1>
@@ -18,21 +26,73 @@
         <br/><hr/><hr/><br/>
     </center>
 
-    <center>
-      <header>
-        <img src="/images/b2b-website-logo-vertical-concept.png" alt="Temporary Logo" width="256" height="256">
-        
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-    </center>
+    <header>
+      <div class="header">
+        <div>
+          <button> HOME </button>
+          <button> PRODUCTS </button>
+          <button> ABOUT </button>
+        </div>
+        <div>
+          <img src="/images/b2b-logo-horizontal-concept-transparent.png" alt="Temporary Logo" width="522" height="261">
+        </div>
+        <div>
+          <button> CONTACT </button>
+          <button> REGISTER </button>
+          <button> LOGIN </button>
+        </div>
+      </div>
+    </header>
+    
+    <form class="register-form">
+      <span>Email Address: </span>
+      <input type="email" placeholder="example@email.com" />
+      
+      <span> Password: </span>
+      <input type="password" placeholder="********" />
+
+      <span> Confirm Password: </span>
+      <input type="password" placeholder="********" />
+
+      <button >Submit</button>
+    </form>
+    
+    <form class="signin-form">
+      <span>Email Address: </span>
+      <input type="email" placeholder="example@email.com" />
+      
+      <span> Password: </span>
+      <input type="password" placeholder="********" />
+
+      <button >Submit</button>
+    </form>
+
 
     <main>
-      <section id="products">
+      <div class="user-menu">
+        <aside>
+           <ul>
+            <li>
+              <button >Profile</button>
+            </li>
+            <li> 
+              <button> Order History </button>
+            </li>
+            <li>
+              <button> Listings </button>
+            </li>
+            <li>
+              <button> Discount Codes</button>
+            </li>
+            <li>
+              <button> Logout </button>
+            </li>
+           </ul>
+        </aside>
+      </div>
+
+
+      <section id="products" class="products">
         <table width="100%">
           <tr ><td colspan="2"><h2>Products</h2></td></tr>
           <tr>
@@ -110,24 +170,28 @@
         </table>
       </section>
       
-      <section id="about">
-        <h2>About Us</h2>
-        <p>This is a paragraph about our company.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque laborum dolorem id laboriosam expedita porro cum similique veniam dolor, sunt, repudiandae debitis, ea et error? Sunt expedita sint nulla.
-        </p>
-      </section>
+      <div class="about-us">
+        <h1>Back2Books</h1>
+        <h3>This is a class project for the course CS 3773 Software Engineering in the term FALL 2023 at University of Texas at San Antonio (UTSA). Back 2 Books is an retro/Y2K-style online shopping site that enables users to buy or sell books. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab accusamus illo sunt cumque. Laboriosam, dolores, quo iure eos unde suscipit, dolorem recusandae numquam dolore quibusdam aspernatur obcaecati impedit architecto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, porro molestias? Deserunt doloremque obcaecati necessitatibus possimus quibusdam, eaque dolorum vitae alias repellendus odit iusto, exercitationem tenetur et ad eius? Voluptates?</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam harum, quaerat veniam tempore aspernatur necessitatibus laudantium fuga, repellat sit illum eius rerum dolorum minima eos voluptates rem. Accusamus, consequatur? Hic.</h3>
+        <aside>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident corrupti reiciendis fugit quam, ex commodi minus amet. Vel voluptatum totam soluta omnis? Animi doloribus quae ea? Fuga, sequi autem.
+        </aside>
+      </div>
       
-      <section id="contact">
+      <div class="contact-us" >
         <h2>Contact Us</h2>
         <p>This is a paragraph about how to contact us.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quas quam, labore odit similique autem corrupti fugit pariatur, non, quod voluptates quasi magni fugiat maiores quaerat? Nihil autem saepe vero.
         </p>
-      </section>
+      </div>
     </main>
     
     
     <footer>
       <p>Copyright 2023 Back 2 Books (B2B)</p>
     </footer>
+    </div>
   </body>
 </html>
