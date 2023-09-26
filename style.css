@@ -69,21 +69,28 @@ li {
 .user-menu {
     background-color: antiquewhite;
     margin: 20px;
+    padding: 10px 24px;
+    display: block;
+    text-align: center;
+    border-radius: 16px;
 }
 
 .products {
     background-color: antiquewhite;
     margin: 20px;
+    padding: 10px;
 }
 
 .about-us {
     background-color: antiquewhite;
     margin: 20px;
+    padding: 10px;
 }
 
 .contact-us {
     background-color: antiquewhite;
     margin: 20px;
+    padding: 10px;
 }
 
 /* NAVBAR STYLING STARTS */
