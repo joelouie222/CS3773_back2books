@@ -97,7 +97,8 @@ li {
 }
 
 .navbar img {
-    width: 10%;
+  height: 25%;
+  width: 15%;
 }
 .nav-links a {
   color: #000000;
