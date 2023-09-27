@@ -10,7 +10,7 @@ Team 9: Operation B2B
 **Team Members:** <br />
 Kip Roberts-Lemus ([kip-is-tired](https://github.com/kip-is-tired)) (Product Owner) <br />
 Bernardo Vazquez De La Cruz ([Ber-Vazq](https://github.com/Ber-Vazq)) (Scrum Master) <br />
-Member (github_username) <br />
+Andrea Mendez ([andreasroses] (https://github.com/andreasroses))<br />
 Daniel Hwang ([nielmin](https://github.com/nielmin)) <br />
 Joe Louie Corporal ([joelouie222](https://github.com/joelouie222)) <br />
 
