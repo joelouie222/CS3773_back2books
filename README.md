@@ -10,7 +10,7 @@ Team 9: Operation B2B
 **Team Members:** <br />
 Kip Roberts-Lemus ([kip-is-tired](https://github.com/kip-is-tired)) (Product Owner) <br />
 Bernardo Vazquez De La Cruz ([Ber-Vazq](https://github.com/Ber-Vazq)) (Scrum Master) <br />
-Andrea Mendez ([andreasroses] (https://github.com/andreasroses))<br />
+Andrea Mendez ([andreasroses](https://github.com/andreasroses))<br />
 Daniel Hwang ([nielmin](https://github.com/nielmin)) <br />
 Joe Louie Corporal ([joelouie222](https://github.com/joelouie222)) <br />
 
@@ -67,7 +67,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ### [Links or Images for Back2Books UML Design]
-[Lucid Chart UML Design](https://lucid.app/lucidchart/e757000a-b6ba-463e-b2dd-5116d215b983/edit?viewport_loc=-11%2C-11%2C1363%2C1519%2C0_0&invitationId=inv_881b57fb-e7a1-46be-b711-e1423209c161)
+[Lucid Chart UML Design](https://lucid.app/lucidchart/invitations/accept/inv_5f1aa998-0f6d-45c3-b788-fbce3e6d0cd3)
 
 ### [Links or Images for Back2Books Website Wireframe]
 [Google Drive - Wireframe](https://drive.google.com/drive/folders/1vGtIzw8nxCOGdjlfECfqK5tEcCy9Dy1C) </br>
