@@ -15,8 +15,8 @@ Daniel Hwang ([nielmin](https://github.com/nielmin)) <br />
 Joe Louie Corporal ([joelouie222](https://github.com/joelouie222)) <br />
 
 ### Description <br />
-Back 2 Books is an retro/Y2K-style online shopping site that enables users to buy or sell books.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Back 2 Books is an retro/Y2K-style online shopping site that enables users to buy or sell books. This is our class project, and hopefully a strong point in the 
+resume of all of our members. This project will allow us to show a mastery of HTML, CSS, Go, JavaScript, as well as database management.
 
 ### Project Features
 * Database driven
