@@ -48,37 +48,35 @@
                         </ul>
 
                     </li>
-
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">Register</a></li>
-                    <li><a href="/">Login</a></li>
+                    <li ><a href="/">Contact</a></li>
+                    <li id="register-btn">Register</li>
+                    <li id="login-btn">Login</li>
                 </div>
             </ul>
         </nav>
 
-        <form class="register-form">
-            <span>Email Address: </span>
+        <div>
+        <form  id="register-form" class="register-form hidden">
+            <!-- <span>Email Address: </span>
             <input type="email" placeholder="example@email.com" />
-
             <span> Password: </span>
             <input type="password" placeholder="********" />
-
             <span> Confirm Password: </span>
             <input type="password" placeholder="********" />
+            <button>Submit</button> -->
+        </form>
+        </div>
 
-    <button>Submit</button>
-  </form>
+        <div>
+        <form id="login-form" class="signin-form hidden">
+            <!-- <span>Email Address: </span>
+            <input type="email" placeholder="example@email.com" />
 
-  <form class="signin-form">
-    <span>Email Address: </span>
-    <input type="email" placeholder="example@email.com" />
-
-            <span> Password: </span>
-            <input type="password" placeholder="********" />
-
-    <button>Submit</button>
-  </form>
-
+                    <span> Password: </span>
+                    <input type="password" placeholder="********" />
+            <button>Submit</button> -->
+        </form>
+        </div>
 
         <main>
             <div class="user-menu">
@@ -108,5 +106,5 @@
         </footer>
         </div>
     </body>
-
+    <script src="js/scripts.js"></script>
 </html>
