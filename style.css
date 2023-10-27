@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     background-image: url(./images/background_image.png);
-}
-
-a {
-    text-decoration: none;
 }
 
 li {
@@ -19,29 +16,125 @@ li {
 
 /* MAIN LAYOUT */
 .container {
-    max-width: 1280px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 142px 0 0 200px;
 }
 
 .header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 142px;
     background-color: antiquewhite;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* background-color: antiquewhite;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
-.header button {
-    border: none;
-    font-size: 24px;
-    padding: 20px 17px 20px;
-    text-transform: uppercase;
-    border: none;
-    font-family: 'DotGothic16', sans-serif;
-    background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: 0.3s;
+.search {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  flex-grow: 4;
 }
+
+.fav {
+  padding: 6px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.cart {
+  padding: 8px;
+  margin: 8px;
+}
+
+
+/* Style the search box inside the header*/
+.header input[type=text] {
+  padding: 6px;
+  border: 0;
+  margin-top: 71px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* Style the sidebar - fixed full height */
+.sidebar {
+  position: fixed;
+  top: 142x;
+  left:0;
+  width:200px;
+  height:100%;
+  background-color: antiquewhite;
+
+  /* height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px; */
+}
+
+/* Style sidebar links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #16a34a;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+@media screen{
+  body>div#header{
+   position:fixed;
+  }
+  body>div#sidebar{
+   position:fixed;
+  }
+ }
+
+ * html body{
+  overflow:hidden;
+ } 
+ 
+ * html div#content{
+  height:100%;
+  overflow:auto;
+ }
+
+
+/* --------------------------------------------------------------------------------------- */
+
 
 /* FORMS */
 
@@ -129,9 +222,9 @@ li {
 }
 
 /* LOGO */
-.logo {
+/* .logo {
   font-size: 32px;
-}
+} */
 
 /* NAVBAR MENU */
 .menu {
