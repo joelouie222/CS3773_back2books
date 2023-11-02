@@ -93,8 +93,8 @@
 
             <div class="about-us">
                 <?php
-                    $name = "HELLO WORLD";
-                    echo '<h3> $name <h3>';
+                    $name = 'HELLO WORLD TESTING PHP 8.2';
+                    echo "<h3> {$name} <h3>";
                 ?>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
