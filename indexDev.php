@@ -32,47 +32,6 @@
             <div class="search"><input type="text" placeholder="Search.." size="50"></div>
             <div class="fav"><a href="#favorite"><i class="fa fa-heart fa-5x"></i></a></div>
             <div class="cart"><a href="#cart"><i class="fa fa-cart-arrow-down fa-5x"></i></a></div>
-
-            <!-- <nav class="navbar"> -->
-            <!-- LOGO -->
-            <!-- <div class="logo">
-                        <marquee scrollamount="8">
-                        <img src="./images/b2b-logo-horizontal-concept-transparent.png" width="300" height="100">
-                        </marquee>
-                    </div> -->
-
-            <!-- NAVIGATION MENU -->
-            <!-- <ul class="nav-links"> -->
-
-            <!-- NAVIGATION MENUS -->
-            <!-- <div class="menu">
-
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./pages/about.html">About</a></li>
-
-                            <li class="services">
-                                <a href="/">Products</a> -->
-
-            <!-- DROPDOWN MENU -->
-            <!-- <ul class="dropdown">
-                                    <li><a href="/">Item 1 </a></li>
-                                    <li><a href="/">Item 2</a></li>
-                                    <li><a href="/">Item 3</a></li>
-                                    <li><a href="/">Item 4</a></li>
-                                    <li><a href="/">Item 5</a></li>
-                                    <li><a href="/pages/products.html">All</a></li>
-                                </ul>
-
-                            </li>
-                            <li ><a href="/">Contact</a></li>
-                            <li id="register-btn">Register</li>
-                            <li id="login-btn">Login</li>
-                        </div>
-                    </ul>
-                </nav> -->
-
-            <!-- <div><form  id="register-form" class="register-form hidden"></form></div>
-                <div><form id="login-form" class="signin-form hidden"></form></div> -->
         </header>
 
         <div class="sidebar">

@@ -1,3 +1,4 @@
+/* --------------------------------- G L O B A L S ------------------------------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +15,8 @@ li {
 }
 
 
-/* MAIN LAYOUT */
-.container {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 142px 0 0 200px;
-}
 
+/* --------------------------------- H E A D E R ------------------------------------------ */
 .header {
     position: fixed;
     top:0;
@@ -28,35 +24,31 @@ li {
     width:100%;
     height: 142px;
     background-color: antiquewhite;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
-.search {
+.search-container {
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
   flex-grow: 4;
+  float: right;
 }
 
-.fav {
+.favorites-container {
   padding: 6px;
   padding: 8px;
   margin: 8px;
 }
 
-.cart {
+.cart-container {
   padding: 8px;
   margin: 8px;
+  margin-right: 5%;
 }
-
 
 /* Style the search box inside the header*/
 .header input[type=text] {
@@ -67,7 +59,7 @@ li {
   font-size: 17px;
 }
 
-/* --------------------------------------------------------------------------------------- */
+/* -----------------------------------  S I D E B A R -------------------------------------------- */
 /* Style the sidebar - fixed full height */
 .sidebar {
   position: fixed;
@@ -76,16 +68,6 @@ li {
   width:200px;
   height:100%;
   background-color: antiquewhite;
-
-  /* height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 10%;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 16px; */
 }
 
 /* Style sidebar links */
@@ -100,6 +82,16 @@ li {
 /* Style links on mouse-over */
 .sidebar a:hover {
   color: #16a34a;
+  background-color: palevioletred;
+}
+
+
+
+/* ---------------------------- M A I N   L A Y O U T ----------------------------------------------*/
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 142px 0 0 200px;
 }
 
 /* Style the main content */
@@ -137,38 +129,6 @@ li {
 
 
 /* FORMS */
-
-.register-form {
-    /* background-color: #3b82f6;
-    margin: 40px;
-    padding: 16px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    border-radius: 16px; */
-    margin: auto;
-    height: 450px;
-    width: 450px;
-    background-image: url(./images/register-box-template.png);
-}
-
-.signin-form {
-    /*
-    background-color: #16a34a;
-    margin: 40px;
-    padding: 16px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    border-radius: 16px;
-    */
-    margin: auto;
-    height: 450px;
-    width: 450px;
-    background-image: url(./images/login-box-template.png);
-}
 
 .hidden {
   display: none !important;
