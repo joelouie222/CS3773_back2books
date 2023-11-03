@@ -20,6 +20,10 @@
 </head>
 
 <body id="home">
+<?php
+    // Include the configuration file
+    include('config.php');
+?>
     <div class="container">
         <header class="header">
             <div>
@@ -81,7 +85,24 @@
             <a href="./pages/about.html"><i class="fa fa-fw fa-info-circle"></i> About Us </a>
             <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         </div>
-
+        <div class = "gallery">
+            
+                            <?php
+                            $select_prod="SELECT * from products";
+                            $result_prod=mysqli_query($db_conn,$select_prod);
+                            while($row_data=mysqli_fetch_assoc($result_prod)){
+                                $prod_name=$row_data['prod_name'];
+                                $prod_price=$row_data['prod_price'];
+                                echo '<div class="prod-content">';
+                                echo '<img src="https://png.pngtree.com/png-clipart/20190904/original/pngtree-retro-book-free-material-png-image_4481187.jpg" alt="Product 2" width="100" height="100">';
+                                echo "<h3>$prod_name</h3>";
+                                echo "<h6>$prod_price</h6>";
+                                echo "</div>";
+                            }
+                            ?>
+                            
+            
+        </div>
         <div class="content">
             <!-- <div class="user-menu">
                         <button>Profile</button>

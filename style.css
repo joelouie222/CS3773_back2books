@@ -203,6 +203,41 @@ li {
     padding: 10px;
 }
 
+.gallery{
+    display: fkex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.prod-content{
+    width:20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    /*box-shadow: 0 14px 28px rgba(0, 0, 0,0.25), 0 10px 10px rgba(0, 0, 0,0.25);*/
+    transition: .4s;
+    background: antiquewhite;
+}
+
+.prod-content:hover{
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0,0.16), 0 10px 10px rgba(0, 0, 0,0.23); */
+    transform: translate(0px, -4px);
+}
+
+h6{
+  font-size: 26px;
+  text-align: center;
+  color:#000000 ;
+  margin: 0;
+}
+
 /* NAVBAR STYLING STARTS */
 
 .navbar {
