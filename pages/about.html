@@ -11,60 +11,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- OUR CSS -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
-    <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">
-            <marquee scrollamount="8">
-                <img src="../images/b2b-logo-horizontal-concept-transparent.png" width="300" height="100">
-            </marquee>
-        </div>
+<body id="home">
+    <div class="container">
+        <header class="header">
+            <div>
+                <img src="../images/b2b-logo-header-05x.png" width="549" height="142" alt="Back to Books Logo">
+            </div>
+            <div class="search"><input type="text" placeholder="Search.." size="50"></div>
+            <div class="fav"><a href="#favorite"><i class="fa fa-heart fa-5x"></i></a></div>
+            <div class="cart"><a href="#cart"><i class="fa fa-cart-arrow-down fa-5x"></i></a></div>
 
-        <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
+            <!-- <nav class="navbar"> -->
+            <!-- LOGO -->
+            <!-- <div class="logo">
+                        <marquee scrollamount="8">
+                        <img src="./images/b2b-logo-horizontal-concept-transparent.png" width="300" height="100">
+                        </marquee>
+                    </div> -->
+
+            <!-- NAVIGATION MENU -->
+            <!-- <ul class="nav-links"> -->
 
             <!-- NAVIGATION MENUS -->
-            <div class="menu">
+            <!-- <div class="menu">
 
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="./pages/about.html">About</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./pages/about.html">About</a></li>
 
-                <li class="services">
-                    <a href="/">Products</a>
+                            <li class="services">
+                                <a href="/">Products</a> -->
 
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li><a href="/">Item 1 </a></li>
-                        <li><a href="/">Item 2</a></li>
-                        <li><a href="/">Item 2</a></li>
-                        <li><a href="/">Item 3</a></li>
-                        <li><a href="/">Item 4</a></li>
+            <!-- DROPDOWN MENU -->
+            <!-- <ul class="dropdown">
+                                    <li><a href="/">Item 1 </a></li>
+                                    <li><a href="/">Item 2</a></li>
+                                    <li><a href="/">Item 3</a></li>
+                                    <li><a href="/">Item 4</a></li>
+                                    <li><a href="/">Item 5</a></li>
+                                    <li><a href="/pages/products.html">All</a></li>
+                                </ul>
+
+                            </li>
+                            <li ><a href="/">Contact</a></li>
+                            <li id="register-btn">Register</li>
+                            <li id="login-btn">Login</li>
+                        </div>
                     </ul>
+                </nav> -->
 
-                </li>
+            <!-- <div><form  id="register-form" class="register-form hidden"></form></div>
+                <div><form id="login-form" class="signin-form hidden"></form></div> -->
+        </header>
 
-                <li><a href="/">Contact</a></li>
-                <li><a href="/">Register</a></li>
-                <li><a href="/">Login</a></li>
-            </div>
-        </ul>
-    </nav>
-    <div class="about-us">
-        <center>
-            <img src="../images/b2b-logo-horizontal-concept-transparent.png" width="300" height="150">
-        </center>
-        <br>
-        <p>
-            This is a class project for the course CS 3773 Software Engineering in the term FALL 2023 at University of
-            Texas at San Antonio (UTSA).
-            <br>Back 2 Books is an retro/Y2K-style online shopping site that enables users to buy or sell books,
-            stationary, and other merchandise!
-        </p>
-    </div>
+        <div class="sidebar">
+            <a href="#signin"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+            <a href="#register" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
+            <a href="../index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
+            <a href="../pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
+            <a href="#home"><i class="fa fa-fw fa-money"></i> Selling</a>
+            <a href="#services"><i class="fa fa-fw fa-tag"></i> Promotions</a>
+            <a href="../pages/about.html"><i class="fa fa-fw fa-info-circle"></i> About Us </a>
+            <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+        <div class="about-us">
+            <center>
+                <img src="../images/b2b-logo-horizontal-concept-transparent.png" width="300" height="150">
+            </center>
+            <br>
+            <p>
+                This is a class project for the course CS 3773 Software Engineering in the term FALL 2023 at University
+                of
+                Texas at San Antonio (UTSA).
+                <br>Back 2 Books is an retro/Y2K-style online shopping site that enables users to buy or sell books,
+                stationary, and other merchandise!
+            </p>
+        </div>
 
 </body>
 
