@@ -14,8 +14,6 @@ li {
     list-style: none;
 }
 
-
-
 /* --------------------------------- H E A D E R ------------------------------------------ */
 .header {
     position: fixed;
@@ -40,6 +38,21 @@ li {
   align-self: flex-end;
 }
 
+.search-container input[type=text] {
+  border: none;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.search-container button {
+  padding: 6px;
+  border: none;
+}
+
+.search-container button:hover {
+  background-color: pink;
+}
+
 .favorites-container {
   padding: 8px;
   margin: 8px;
@@ -52,14 +65,7 @@ li {
   align-self: flex-end;
 }
 
-/* Style the search box inside the header*/
-.header input[type=text] {
-  padding: 6px;
-  border: 0;
-  margin-top: 71px;
-  margin-right: 16px;
-  font-size: 17px;
-}
+
 
 /* -----------------------------------  S I D E B A R -------------------------------------------- */
 /* Style the sidebar - fixed full height */

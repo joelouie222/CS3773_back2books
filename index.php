@@ -30,7 +30,7 @@
             <a href="https://back2books.azurewebsites.net/"><img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
             </div>
             <div class="search-container">
-                <input type="text" placeholder="Search..." name="search" size="50">
+                <input type="text" placeholder="Search..." name="search" size="40">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </div>
             <div class="favorites-container"><a href="#favorite"><i class="fa fa-heart fa-4x"></i></a></div>
