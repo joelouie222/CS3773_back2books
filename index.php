@@ -31,15 +31,15 @@
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Search..." name="search" size="40">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <button type="submit"><i class="fa fa-search fa-2x"></i></button>
             </div>
             <div class="favorites-container"><a href="#favorite"><i class="fa fa-heart fa-4x"></i></a></div>
             <div class="cart-container"><a href="#cart"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
         </header>
 
         <div class="sidebar">
-            <a href="#signin"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
-            <a href="#register" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
+            <a href="./pages/login.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+            <a href="./pages/register.html" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
             <a href="./index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
             <a href="./pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
             <a href="#home"><i class="fa fa-fw fa-money"></i> Selling</a>
@@ -47,8 +47,9 @@
             <a href="./pages/about.html"><i class="fa fa-fw fa-info-circle"></i> About Us </a>
             <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         </div>
+
+        
         <div class = "gallery">
-            
                             <?php
                             $select_prod="SELECT * from products";
                             $result_prod=mysqli_query($db_conn,$select_prod);

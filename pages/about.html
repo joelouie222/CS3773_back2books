@@ -20,65 +20,28 @@
 <body id="home">
     <div class="container">
         <header class="header">
-            <div>
-                <img src="../images/b2b-logo-header-05x.png" width="549" height="142" alt="Back to Books Logo">
+            <div class="logo-container">
+            <a href="https://back2books.azurewebsites.net/"><img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
             </div>
-            <div class="search"><input type="text" placeholder="Search.." size="50"></div>
-            <div class="fav"><a href="#favorite"><i class="fa fa-heart fa-5x"></i></a></div>
-            <div class="cart"><a href="#cart"><i class="fa fa-cart-arrow-down fa-5x"></i></a></div>
-
-            <!-- <nav class="navbar"> -->
-            <!-- LOGO -->
-            <!-- <div class="logo">
-                        <marquee scrollamount="8">
-                        <img src="./images/b2b-logo-horizontal-concept-transparent.png" width="300" height="100">
-                        </marquee>
-                    </div> -->
-
-            <!-- NAVIGATION MENU -->
-            <!-- <ul class="nav-links"> -->
-
-            <!-- NAVIGATION MENUS -->
-            <!-- <div class="menu">
-
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./pages/about.html">About</a></li>
-
-                            <li class="services">
-                                <a href="/">Products</a> -->
-
-            <!-- DROPDOWN MENU -->
-            <!-- <ul class="dropdown">
-                                    <li><a href="/">Item 1 </a></li>
-                                    <li><a href="/">Item 2</a></li>
-                                    <li><a href="/">Item 3</a></li>
-                                    <li><a href="/">Item 4</a></li>
-                                    <li><a href="/">Item 5</a></li>
-                                    <li><a href="/pages/products.html">All</a></li>
-                                </ul>
-
-                            </li>
-                            <li ><a href="/">Contact</a></li>
-                            <li id="register-btn">Register</li>
-                            <li id="login-btn">Login</li>
-                        </div>
-                    </ul>
-                </nav> -->
-
-            <!-- <div><form  id="register-form" class="register-form hidden"></form></div>
-                <div><form id="login-form" class="signin-form hidden"></form></div> -->
+            <div class="search-container">
+                <input type="text" placeholder="Search..." name="search" size="40">
+                <button type="submit"><i class="fa fa-search fa-2x"></i></button>
+            </div>
+            <div class="favorites-container"><a href="#favorite"><i class="fa fa-heart fa-4x"></i></a></div>
+            <div class="cart-container"><a href="#cart"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
         </header>
 
         <div class="sidebar">
-            <a href="../pages/login.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
-            <a href="../pages/register.html" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
-            <a href="../index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
-            <a href="../pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
+            <a href="./pages/login.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+            <a href="./pages/register.html" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
+            <a href="./index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
+            <a href="./pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
             <a href="#home"><i class="fa fa-fw fa-money"></i> Selling</a>
             <a href="#services"><i class="fa fa-fw fa-tag"></i> Promotions</a>
-            <a href="../pages/about.html"><i class="fa fa-fw fa-info-circle"></i> About Us </a>
+            <a href="./pages/about.html"><i class="fa fa-fw fa-info-circle"></i> About Us </a>
             <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         </div>
+
         <div class="about-us">
             <center>
                 <img src="../images/b2b-logo-horizontal-concept-transparent.png" width="300" height="150">

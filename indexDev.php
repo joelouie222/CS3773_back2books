@@ -26,17 +26,20 @@
 ?>
     <div class="container">
         <header class="header">
-            <div>
-                <img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo">
+            <div class="logo-container">
+            <a href="https://back2books.azurewebsites.net/"><img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
             </div>
-            <div class="search"><input type="text" placeholder="Search.." size="50"></div>
-            <div class="fav"><a href="#favorite"><i class="fa fa-heart fa-5x"></i></a></div>
-            <div class="cart"><a href="#cart"><i class="fa fa-cart-arrow-down fa-5x"></i></a></div>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." name="search" size="40">
+                <button type="submit"><i class="fa fa-search fa-2x"></i></button>
+            </div>
+            <div class="favorites-container"><a href="#favorite"><i class="fa fa-heart fa-4x"></i></a></div>
+            <div class="cart-container"><a href="#cart"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
         </header>
 
         <div class="sidebar">
-            <a href="#signin"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
-            <a href="#register" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
+            <a href="./pages/login.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
+            <a href="./pages/register.html" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
             <a href="./index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
             <a href="./pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
             <a href="#home"><i class="fa fa-fw fa-money"></i> Selling</a>
@@ -46,13 +49,6 @@
         </div>
         
         <div class="content">
-            <!-- <div class="user-menu">
-                        <button>Profile</button>
-                        <button> Order History </button>
-                        <button> Listings </button>
-                        <button> Discount Codes</button>
-                        <button> Logout </button>
-                    </div> -->
 
             <div class="about-us">
                 <?php

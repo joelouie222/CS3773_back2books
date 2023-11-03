@@ -41,16 +41,17 @@ li {
 .search-container input[type=text] {
   border: none;
   font-size: 17px;
-  padding: 8px;
+  padding: 11px 0px 8px 8px;
 }
 
 .search-container button {
   padding: 6px;
+  background-color: lightpink;
   border: none;
 }
 
 .search-container button:hover {
-  background-color: pink;
+  background-color: hotpink;
 }
 
 .favorites-container {
