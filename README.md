@@ -20,29 +20,29 @@ Instructor: [Ali Dogru](alihikmet.dogru@utsa.edu)
 - [ ] Create/Modify User Information
     - [ ] Allow users to register for accounts
 - [ ] Create/Modify Items for Sale
-    - Must include images
-    - Must include price
-    - Must include quantity available
-    - Must allow ability to add new items
+    - [ ] Include images
+    - [ ] Include price
+    - [ ] Include quantity available
+    - [ ] Allow ability to add new items
 - [ ] Create/Modify Shopping Cart
-    - Must show items in cart
-    - Must calculate taxes: assume 8.25% tax rate
-    - Must allow for discount codes
-    - Must show summary of order and allow for order to be placed
+    - [ ] Show items in cart
+    - [ ] Calculate taxes: assume 8.25% tax rate
+    - [ ] Allow for discount codes
+    - [ ] Show summary of order and allow for order to be placed
 - [ ] Ability to search based on criteria:
-    - Item/Description
-    - Sort by Price
-    - Sort by Availability
+    - [ ] Item/Description
+    - [ ] Sort by Price
+    - [ ] Sort by Availability
 - [ ] Administrative back end
-    - Allow to modify all items
-    - Allow for creation of discount codes
-    - Allow for creation of sales items
-    - Allow to modify users
-    - Show currently placed orders
-    - Show history of orders
-        1. Sort by order date
-        2. Sort by customer
-        3. Sort by order size in dollar amount
+    - [ ] Allow to modify all items
+    - [ ] Allow for creation of discount codes
+    - [ ] Allow for creation of sales items
+    - [ ] Allow to modify users
+    - [ ] Show currently placed orders
+    - [ ] Show history of orders
+        - [ ] Sort by order date
+        - [ ] Sort by customer
+        - [ ] Sort by order size in dollar amount
 - [ ] Intuitive UI/UX
 - [x] A web application (bonus)
 
