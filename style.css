@@ -30,24 +30,26 @@ li {
     justify-content: space-between;
 }
 
+.logo-container {
+  flex-grow: 1;
+}
+
 .search-container {
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  flex-grow: 4;
-  float: right;
+  padding: 8px;
+  margin: 8px;
+  align-self: flex-end;
 }
 
 .favorites-container {
-  padding: 6px;
   padding: 8px;
   margin: 8px;
+  align-self: flex-end;
 }
 
 .cart-container {
   padding: 8px;
-  margin: 8px;
-  margin-right: 5%;
+  margin: 8px 2% 8px 8px;
+  align-self: flex-end;
 }
 
 /* Style the search box inside the header*/
@@ -81,8 +83,8 @@ li {
 
 /* Style links on mouse-over */
 .sidebar a:hover {
-  color: #16a34a;
-  background-color: palevioletred;
+  color: black;
+  background-color: pink;
 }
 
 
