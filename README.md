@@ -4,9 +4,7 @@ resume of all of our members.
 
 This is a class project for the course CS 3773 Software Engineering in the term FALL 2023 at University of Texas at San Antonio (UTSA).
 
-- [ ]- [ ]Instructor:- [ ]- [ ]<br />
-[Ali Dogru](alihikmet.dogru@utsa.edu) 
-
+Instructor: [Ali Dogru](alihikmet.dogru@utsa.edu) 
 
 ## Team 9 Operation B2B:
 | Member | Role |
