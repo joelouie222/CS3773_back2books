@@ -19,7 +19,9 @@ jobs:
           go-version: '1.21.4'  # Specify the Go version you want to use
 
       - name: Run go build
-        run: go build -o b2b
+        run: | 
+        cd /home/site
+        go build -o b2b
 
       - name: Zip artifact for deployment
         run: zip release.zip b2b
