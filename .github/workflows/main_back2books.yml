@@ -20,7 +20,7 @@ jobs:
 
       - name: Run go build
         run: | 
-          cd /home/site
+          cd /go
           go build -o b2b
 
       - name: Zip artifact for deployment
