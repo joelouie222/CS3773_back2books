@@ -18,11 +18,11 @@ jobs:
         with:
           go-version: '1.21.4'  # Specify the Go version you want to use
 
-      - name: Install dependencies
-        run: |
-          go clean -modcache
-          go get github.com/joelouie222/CS3773_back2books
-          go install github.com/joelouie222/CS3773_back2books
+      # - name: Install dependencies
+      #   run: |
+      #     go clean -modcache
+      #     go get github.com/joelouie222/CS3773_back2books
+      #     go install github.com/joelouie222/CS3773_back2books
       
       - name: Run go build
         run: go build -o b2b
