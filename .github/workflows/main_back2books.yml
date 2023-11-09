@@ -1,7 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy PHP app to Azure Web App - back2books
+name: Build and deploy Go app to Azure Web App
 
 on:
   push:
@@ -16,28 +13,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - name: Setup Go
+        uses: actions/setup-go@v2
         with:
-          php-version: '8.2'
+          go-version: '1.21.4'  # Specify the Go version you want to use
 
-      - name: Check if composer.json exists
-        id: check_files
-        uses: andstor/file-existence-action@v1
-        with:
-          files: 'composer.json'
-
-      - name: Run composer install if composer.json exists
-        if: steps.check_files.outputs.files_exists == 'true'
-        run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
+      - name: Run go build
+        run: go build -o b2b
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: zip release.zip b2b
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: php-app
+          name: go-app
           path: release.zip
 
   deploy:
@@ -51,7 +41,7 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: php-app
+          name: go-app
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
