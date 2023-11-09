@@ -19,7 +19,7 @@ jobs:
           go-version: '1.21.4'  # Specify the Go version you want to use
 
       - name: Install dependencies
-        run: go install github.com/joelouie222/CS3773_back2books/go
+        run: go go install github.com/joelouie222/CS3773_back2books/go@latest
       
       - name: Run go build
         run: go build -o b2b
