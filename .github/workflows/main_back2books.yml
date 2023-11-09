@@ -20,6 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          go clean -modcache
           go get github.com/joelouie222/CS3773_back2books
           go install github.com/joelouie222/CS3773_back2books
       
