@@ -18,6 +18,9 @@ jobs:
         with:
           go-version: '1.21.4'  # Specify the Go version you want to use
 
+      - name: Install dependencies
+        run: go get github.com/joelouie222/CS3773_back2books/go
+      
       - name: Run go build
         run: | 
           cd /go
