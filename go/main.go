@@ -15,7 +15,7 @@ func main() {
     http.HandleFunc("/", indexHandler)
     http.HandleFunc("/login", loginHandler)
     http.HandleFunc("/register", registerHandler)
-    http.HandleFunc("/pages/products", booksHandler)
+    http.HandleFunc("/pages/products.html", booksHandler)
     http.HandleFunc("/fetch", fetchHandler)
    http.HandleFunc("/add", AddHandler)
     http.HandleFunc("/delete", DeleteHandler)
