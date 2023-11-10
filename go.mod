@@ -1,3 +1,3 @@
-module go/v1
+module go
 
 go 1.21.4
