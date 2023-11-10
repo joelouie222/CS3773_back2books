@@ -2,7 +2,7 @@ package main
 
 import (
     "fmt"
-	"html/pages"
+	"github.com/joelouie222/CS3773_back2books/html/pages"
 	"log"
 	"net/http"
 	"strconv"
@@ -21,14 +21,14 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
     user.username = "admin"
     user.password = "password"
 
-    tmpl := template.Must(template.ParseFiles("./templates/login.html"))
+    tmpl := template.Must(template.ParseFiles("./pages/login.html"))
     err := tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 }
 
 func registerHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("Register")
-    tmpl, err := template.ParseFiles("templates/login.html")
+    tmpl, err := template.ParseFiles("pages/login.html")
     err = tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 
@@ -39,7 +39,7 @@ func booksHandler(w http.ResponseWriter, r *http.Request) {
     if err != nil {
         log.Fatal(err)
     }
-    tmpl, err := pages.ParseFiles("pages/products.html")
+    tmpl, err := template.ParseFiles("pages/products.html")
     if err != nil {
         log.Fatal(err)
     }
@@ -50,7 +50,7 @@ func fetchHandler(w http.ResponseWriter, r *http.Request) {
     books, err := getBooks()
     if err != nil { log.Fatal(err) }
 
-    tmpl := template.Must(template.ParseFiles("./templates/productItem.html"))
+    tmpl := template.Must(template.ParseFiles("./pages/productItem.html"))
 
     err = tmpl.Execute(w, books)
     if err != nil { log.Fatal(err) }
