@@ -1,4 +1,4 @@
-module CS3773_back2books/go
+module /go
 
 go 1.21.4
 
