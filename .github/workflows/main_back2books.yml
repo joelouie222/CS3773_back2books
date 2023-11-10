@@ -30,13 +30,13 @@ jobs:
           go build -o b2b
       
       - name: Create artifact
-        run: zip -r go/release.zip go/*
+        run: zip -r release.zip
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: go-app
-          path: go/release.zip
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,7 +52,7 @@ jobs:
           name: go-app
 
       - name: Unzip artifact for deployment
-        run: unzip -o release.zip -d go/
+        run: unzip -o release.zip
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
