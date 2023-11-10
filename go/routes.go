@@ -34,6 +34,7 @@ func registerHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 func booksHandler(w http.ResponseWriter, r *http.Request) {
+    fmt.Println("bookHandling")
     var books []Book
     books, err := getBooks()
     if err != nil {
@@ -41,19 +42,24 @@ func booksHandler(w http.ResponseWriter, r *http.Request) {
     }
     tmpl, err := template.ParseFiles("pages/products.html")
     if err != nil {
+        fmt.Println(err);
         log.Fatal(err)
     }
 
     tmpl.Execute(w, books)
 }
 func fetchHandler(w http.ResponseWriter, r *http.Request) {
+    fmt.Println("fetchHandling");
     books, err := getBooks()
     if err != nil { log.Fatal(err) }
 
     tmpl := template.Must(template.ParseFiles("./pages/productItem.html"))
 
     err = tmpl.Execute(w, books)
-    if err != nil { log.Fatal(err) }
+    if err != nil {
+        log.Fatal(err)
+        fmt.Println(err);
+    }
 }
 
 func AddHandler(w http.ResponseWriter, r *http.Request) {
