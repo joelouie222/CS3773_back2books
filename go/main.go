@@ -17,7 +17,7 @@ func main() {
     http.HandleFunc("/register", registerHandler)
     http.HandleFunc("/pages/products.html", booksHandler)
     http.HandleFunc("/fetch", fetchHandler)
-   http.HandleFunc("/add", AddHandler)
+    http.HandleFunc("/add", AddHandler)
     http.HandleFunc("/delete", DeleteHandler)
 
     fmt.Println("Server started on :8080")
