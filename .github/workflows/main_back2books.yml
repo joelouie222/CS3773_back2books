@@ -59,4 +59,4 @@ jobs:
           app-name: 'back2books'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_887C03BABDA4457C9E79540C75A563C2 }}
-          package: .
+          package: go
