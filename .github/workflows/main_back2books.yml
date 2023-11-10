@@ -27,6 +27,7 @@ jobs:
       - name: Run go build
         run: |
           cat go.mod
+          go mod tidy
           go build -o b2b
 
       - name: Zip artifact for deployment
