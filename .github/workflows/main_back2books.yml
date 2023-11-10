@@ -25,7 +25,9 @@ jobs:
       #     go install github.com/joelouie222/CS3773_back2books
       
       - name: Run go build
-        run: go build -o b2b
+        run: |
+          cat go.mod
+          go build -o b2b
 
       - name: Zip artifact for deployment
         run: zip release.zip b2b
@@ -59,4 +61,4 @@ jobs:
           app-name: 'back2books'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_887C03BABDA4457C9E79540C75A563C2 }}
-          package: go
+          package: .
