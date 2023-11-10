@@ -10,7 +10,7 @@ import (
 var db *sql.DB
 
 func main() {
-    http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
+    // http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
     http.HandleFunc("/", indexHandler)
     http.HandleFunc("/login", loginHandler)
