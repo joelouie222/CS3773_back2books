@@ -12,6 +12,7 @@ var db *sql.DB
 func main() {
     // http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
+    fmt.Println("running main")
     http.HandleFunc("/", indexHandler)
     http.HandleFunc("/login", loginHandler)
     http.HandleFunc("/register", registerHandler)
