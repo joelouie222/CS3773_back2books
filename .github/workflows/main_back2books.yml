@@ -52,7 +52,7 @@ jobs:
           name: go-app
 
       - name: Unzip artifact for deployment
-        run: unzip go/release.zip
+        run: unzip release.zip
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
