@@ -27,7 +27,7 @@ jobs:
       - name: Run go build
         run: |
           cd go
-          go build -o b2b
+          go build -o b2b -x
       
       - name: Create artifact
         run: zip -r release.zip ./* r
