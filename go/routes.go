@@ -9,7 +9,7 @@ import (
 )
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 
-    tmpl, err := template.ParseFiles("index.html")
+    tmpl, err := template.ParseFiles("../index.html")
     if err != nil {
         log.Fatal(err)
     }
@@ -21,26 +21,24 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
     user.username = "admin"
     user.password = "password"
 
-    tmpl := template.Must(template.ParseFiles("./pages/login.html"))
+    tmpl := template.Must(template.ParseFiles("../pages/login.html"))
     err := tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 }
 
 func registerHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Println("Register")
-    tmpl, err := template.ParseFiles("pages/login.html")
+    tmpl, err := template.ParseFiles("../pages/login.html")
     err = tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 
 }
 func booksHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Println("bookHandling")
     var books []Book
     books, err := getBooks()
     if err != nil {
         log.Fatal(err)
     }
-    tmpl, err := template.ParseFiles("pages/products.html")
+    tmpl, err := template.ParseFiles("../pages/products.html")
     if err != nil {
         fmt.Println(err);
         log.Fatal(err)
@@ -49,11 +47,10 @@ func booksHandler(w http.ResponseWriter, r *http.Request) {
     tmpl.Execute(w, books)
 }
 func fetchHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Println("fetchHandling");
     books, err := getBooks()
     if err != nil { log.Fatal(err) }
 
-    tmpl := template.Must(template.ParseFiles("./pages/productItem.html"))
+    tmpl := template.Must(template.ParseFiles("../pages/productItem.html"))
 
     err = tmpl.Execute(w, books)
     if err != nil {
