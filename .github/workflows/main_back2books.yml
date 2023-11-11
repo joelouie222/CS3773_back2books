@@ -6,9 +6,9 @@ on:
       - main
   workflow_dispatch:
 
-    jobs:
-      build:
-        runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -18,16 +18,17 @@ on:
         with:
           go-version: '1.21.4'  # Specify the Go version you want to use
 
-            # - name: Install dependencies
-            #   run: |
-            #     go clean -modcache
-            #     go get github.com/joelouie222/CS3773_back2books
-            #     go install github.com/joelouie222/CS3773_back2books
-
+      # - name: Install dependencies
+      #   run: |
+      #     go clean -modcache
+      #     go get github.com/joelouie222/CS3773_back2books
+      #     go install github.com/joelouie222/CS3773_back2books
+      
       - name: Run go build
         run: |
+          cd go
           CGO_ENABLED=0 go build -o b2b
-
+      
       - name: Create artifact
         run: zip -r release.zip ./* r
 
@@ -37,15 +38,15 @@ on:
           name: go-app
           path: release.zip
 
-          deploy:
-            runs-on: ubuntu-latest
-          needs: build
-          environment:
-            name: 'Production'
-        url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
-          steps:
-            - name: Download artifact from build job
+    steps:
+      - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
           name: go-app
