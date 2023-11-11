@@ -1,7 +1,4 @@
-package main
-
-import (
-)
+package pkg
 
 type Book struct {
     ID          int64

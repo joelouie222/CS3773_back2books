@@ -1,4 +1,4 @@
-package main
+package pkg
 
 import (
     "log"
@@ -7,6 +7,7 @@ import (
     "github.com/go-sql-driver/mysql"
 
 )
+var db *sql.DB
 
 func init() {
     // Capture connection properties.

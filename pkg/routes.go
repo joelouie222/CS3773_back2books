@@ -1,4 +1,4 @@
-package main
+package pkg
 
 import (
     "fmt"
@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strconv"
 )
-func indexHandler(w http.ResponseWriter, r *http.Request) {
+func IndexHandler(w http.ResponseWriter, r *http.Request) {
 
     tmpl, err := template.ParseFiles("index.html")
     if err != nil {
@@ -16,7 +16,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
     tmpl.Execute(w, nil)
 }
 
-func loginHandler(w http.ResponseWriter, r *http.Request) {
+func LoginHandler(w http.ResponseWriter, r *http.Request) {
     var user User 
     user.username = "admin"
     user.password = "password"
@@ -26,14 +26,14 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
     if err != nil { log.Fatal(err) }
 }
 
-func registerHandler(w http.ResponseWriter, r *http.Request) {
+func RegisterHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("Register")
     tmpl, err := template.ParseFiles("pages/login.html")
     err = tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 
 }
-func booksHandler(w http.ResponseWriter, r *http.Request) {
+func BooksHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("bookHandling")
     var books []Book
     books, err := getBooks()
@@ -48,7 +48,7 @@ func booksHandler(w http.ResponseWriter, r *http.Request) {
 
     tmpl.Execute(w, books)
 }
-func fetchHandler(w http.ResponseWriter, r *http.Request) {
+func FetchHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("fetchHandling");
     books, err := getBooks()
     if err != nil { log.Fatal(err) }
