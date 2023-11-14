@@ -63,7 +63,7 @@ func getBooks() ([]Book, error) {
 
     for rows.Next() {
         var book Book
-        err := rows.Scan(&book.ID, &book.Title, &book.Lname, &book.Fname, &book.Price, &book.Publisher)
+        err := rows.Scan(&book.ID, &book.Title, &book.Desc, &book.ISBN, &book.PublishDate, &book.Price,&book.Genre, &book.Format, &book.NumPages, &book.Publisher)
         if err != nil {
             log.Fatal(err)
         }
