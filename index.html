@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Back2Books</title>
-    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,15 +15,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- OUR CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo-style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="icon" type="image/x-icon" href="/images/favicon/favicon-16x16.png">
 </head>
 
 <body id="home">
+    <?php
+    // Include the configuration file
+    include('config.php');
+    ?>
     <div class="container">
         <header class="header">
             <div class="logo-container">
-            <a href="https://back2books.azurewebsites.net/"><img src="/images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
+                <a href="https://back2books.azurewebsites.net/"><img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Search..." name="search" size="40">
@@ -37,7 +41,7 @@
         <div class="sidebar">
             <a href="https://back2books.azurewebsites.net/pages/login.html"><i class="fa fa-fw fa-sign-in"></i> Sign In</a>
             <a href="https://back2books.azurewebsites.net/pages/register.html" onclick="scripts()"><i class="fa fa-fw fa-address-card"></i> Register </a>
-            <a href="https://back2books.azurewebsites.net/index.html"><i class="fa fa-fw fa-book"></i> Catalog </a>
+            <a href="https://back2books.azurewebsites.net/index.php"><i class="fa fa-fw fa-book"></i> Catalog </a>
             <a href="https://back2books.azurewebsites.net/pages/products.html"><i class="fa fa-fw fa-usd"></i> Marketplace </a>
             <a href="https://back2books.azurewebsites.net/pages/selling.html"><i class="fa fa-fw fa-money"></i> Selling</a>
             <a href="https://back2books.azurewebsites.net/pages/promotion.html"><i class="fa fa-fw fa-tag"></i> Promotions</a>
@@ -45,14 +49,10 @@
             <a href="https://back2books.azurewebsites.net/pages/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
         </div>
 
-        
-        <div class = "gallery">
-                            
-            
-        </div>
         <div class="content">
+
             <div class="about-us">
-                
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -92,7 +92,9 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-
+            <div class="gallery">
+            </div>
+            </br>
             <div class="about-us">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
