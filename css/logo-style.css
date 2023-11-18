@@ -195,7 +195,7 @@ li {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-    background-image: url('images/y2kwindow-b2bblue.png');
+    background-image: url('/images/y2kwindow-b2bblue.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-color: antiquewhite; */
