@@ -5,7 +5,8 @@ import (
 	"log"
 	"net/http"
 	"os"
-    "github.com/joelouie222/CS3773_back2books/pkg"
+
+	"github.com/joelouie222/CS3773_back2books/pkg"
 )
 
 //var db *sql.DB
@@ -32,7 +33,7 @@ func main() {
 func getPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = ":8080" // Default to port 8080 if PORT is not set
+		port = ":80" // Default to port 8080 if PORT is not set
 	}
 	return port
 }
