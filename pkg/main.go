@@ -1,4 +1,4 @@
-package main
+package pkg
 
 import (
 	"fmt"
@@ -13,11 +13,11 @@ func main() {
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
 	fmt.Println("running main")
-	http.HandleFunc("/", indexHandler)
-	http.HandleFunc("/login", loginHandler)
-	http.HandleFunc("/register", registerHandler)
-	http.HandleFunc("/products", booksHandler)
-	http.HandleFunc("/fetch", fetchHandler)
+	http.HandleFunc("/", IndexHandler)
+	http.HandleFunc("/login", LoginHandler)
+	http.HandleFunc("/register", RegisterHandler)
+	http.HandleFunc("/products", BooksHandler)
+	http.HandleFunc("/fetch", FetchHandler)
 	http.HandleFunc("/add", AddHandler)
 	http.HandleFunc("/delete", DeleteHandler)
 
