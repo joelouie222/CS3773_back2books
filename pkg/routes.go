@@ -21,13 +21,13 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
     user.username = "admin"
     user.password = "password"
 
-    tmpl := template.Must(template.ParseFiles("/pages/login.html"))
+    tmpl := template.Must(template.ParseFiles("pages/login.html"))
     err := tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 }
 
 func RegisterHandler(w http.ResponseWriter, r *http.Request) {
-    tmpl, err := template.ParseFiles("/pages/login.html")
+    tmpl, err := template.ParseFiles("pages/login.html")
     err = tmpl.Execute(w, nil)
     if err != nil { log.Fatal(err) }
 
@@ -38,7 +38,7 @@ func BooksHandler(w http.ResponseWriter, r *http.Request) {
     if err != nil {
         log.Fatal(err)
     }
-    tmpl, err := template.ParseFiles("/pages/products.html")
+    tmpl, err := template.ParseFiles("pages/products.html")
     if err != nil {
         fmt.Println(err);
         log.Fatal(err)
@@ -50,7 +50,7 @@ func FetchHandler(w http.ResponseWriter, r *http.Request) {
     books, err := getBooks()
     if err != nil { log.Fatal(err) }
 
-    tmpl := template.Must(template.ParseFiles("/pages/productItem.html"))
+    tmpl := template.Must(template.ParseFiles("pages/productItem.html"))
 
     err = tmpl.Execute(w, books)
     if err != nil {
