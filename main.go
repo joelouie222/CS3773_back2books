@@ -34,6 +34,8 @@ func getPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = ":80" // Default to port 8080 if PORT is not set
+	} else {
+		port = ":" + port // Add the colon if PORT is set
 	}
 	return port
 }
