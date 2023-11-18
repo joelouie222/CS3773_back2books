@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/joelouie222/CS3773_back2books/pkg"
+	"./wwwroot/pkg"
 )
 
 //var db *sql.DB
