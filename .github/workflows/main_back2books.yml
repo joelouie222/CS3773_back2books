@@ -26,7 +26,6 @@ jobs:
       
       - name: Run go build
         run: |
-          cd go
           CGO_ENABLED=0 go build -o b2b
       
       - name: Create artifact
