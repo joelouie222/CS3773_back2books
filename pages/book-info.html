@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is what we got</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- OUR CSS -->
+    <link rel="stylesheet" href="/css/logo-style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon/favicon-16x16.png">
+</head>
+
+<body id="home">
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <a href="/"><img src="./images/b2b-logo-header.png" width="549" height="142" alt="Back to Books Logo"></a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." name="search" size="40">
+                <button type="submit"><i class="fa fa-search fa-2x"></i></button>
+            </div>
+            <div class="favorites-container"><a href="/pages/favorites.html"><i class="fa fa-heart fa-4x"></i></a></div>
+            <div class="cart-container"><a href="/pages/cart.html"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
+        </header>
+
+
+        <div class="sidebar">
+            <a href="/login"><i class="fa fa-fw fa-sign-in"></i> Sign
+                In</a>
+            <a href="/register" onclick="scripts()"><i
+                    class="fa fa-fw fa-address-card"></i> Register </a>
+            <a href="/"><i class="fa fa-fw fa-book"></i> Catalog </a>
+            <a href="/products"><i class="fa fa-fw fa-usd"></i>
+                Marketplace </a>
+            <a href="/selling"><i class="fa fa-fw fa-money"></i>
+                Selling</a>
+            <a href="/promotion"><i class="fa fa-fw fa-tag"></i>
+                Promotions</a>
+            <a href="/about"><i class="fa fa-fw fa-info-circle"></i>
+                About Us </a>
+            <a href="/contact"><i class="fa fa-fw fa-envelope"></i>
+                Contact</a>
+        </div>
+
+        </nav>
+        <section id="products" class="products" >
+            <div class = "gallery" hx-get="/fetch" hx-trigger="load">
+                
+            </div>
+        </section>
+</body>
+
+</html>
