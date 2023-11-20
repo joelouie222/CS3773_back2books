@@ -2,6 +2,7 @@ package pkg
 
 import (
 	"database/sql"
+	"fmt"
 	"log"
 	"os"
 
@@ -55,7 +56,7 @@ func deleteBook(id int) error {
 
 // Returns all items in the BOOKS table.
 func getBooks() ([]Book, error) {
-	rows, err := db.Query("SELECT * FROM BOOKS")
+	rows, err := db.Query("SELECT b.*, bi.IMAGE_LINK FROM BOOKS b LEFT JOIN BOOK_IMAGE bi ON b.BOOK_ID = bi.book_id")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -65,7 +66,7 @@ func getBooks() ([]Book, error) {
 
 	for rows.Next() {
 		var book Book
-		err := rows.Scan(&book.ID, &book.Title, &book.Desc, &book.ISBN, &book.PublishDate, &book.Price, &book.Format, &book.NumPages, &book.Publisher)
+		err := rows.Scan(&book.ID, &book.Title, &book.Desc, &book.ISBN, &book.PublishDate, &book.Price, &book.Format, &book.NumPages, &book.Publisher, &book.ImgSrc)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -76,4 +77,25 @@ func getBooks() ([]Book, error) {
 	}
 
 	return books, nil
+}
+
+// Returns specfic item from the BOOKS table.
+func getBookByID(id int) (Book, error) {
+	var book Book
+	row, err := db.Query("SELECT b.*, bi.IMAGE_LINK FROM BOOKS b LEFT JOIN BOOK_IMAGE bi ON b.BOOK_ID = bi.book_id WHERE b.BOOK_ID=?", id)
+	if err != nil {
+		return book, err
+	}
+	defer row.Close()
+	if row.Next() {
+		err := row.Scan(&book.ID, &book.Title, &book.Desc, &book.ISBN, &book.PublishDate, &book.Price, &book.Format, &book.NumPages, &book.Publisher, &book.ImgSrc)
+		if err != nil {
+			return book, err
+		}
+	} else {
+		// No matching record found
+		return book, fmt.Errorf("Book with ID %d not found", id)
+	}
+
+	return book, nil
 }

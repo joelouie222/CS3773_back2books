@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is what we got</title>
+    <title>what a cool book</title>
     <script src="https://unpkg.com/htmx.org@1.9.6"></script>
 
     <!-- GOOGLE FONT -->
@@ -56,8 +56,14 @@
 
         </nav>
         <section id="products" class="products" >
-            <div class = "gallery" hx-get="/fetch" hx-trigger="load">
-                
+            <div class = "prodInfo">
+                <div><h2>{{.Title}}</h2></div>
+                <div><img src="{{.ImgSrc}}"></div>
+                <br>
+                <p>{{.Desc}}</p><br>
+                <div>
+                    <p>{{.Price}}</p>
+                </div>
             </div>
         </section>
 </body>

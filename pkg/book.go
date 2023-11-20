@@ -10,4 +10,5 @@ type Book struct {
 	Format      string
 	NumPages    string
 	Publisher   string
+	ImgSrc      string
 }

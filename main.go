@@ -24,7 +24,7 @@ func main() {
 	http.HandleFunc("/fetch", pkg.FetchHandler)
 	http.HandleFunc("/add", pkg.AddHandler)
 	http.HandleFunc("/delete", pkg.DeleteHandler)
-
+	http.HandleFunc("/itemInfo", pkg.FetchBookHandler)
 	port := getPort()
 	fmt.Printf("Server started on %s\n", port)
 	log.Fatal(http.ListenAndServe(port, nil))
