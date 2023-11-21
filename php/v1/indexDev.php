@@ -34,8 +34,8 @@
                 <input type="text" placeholder="Search..." name="search" size="40">
                 <button type="submit"><i class="fa fa-search fa-2x"></i></button>
             </div>
-            <div class="favorites-container"><a href="/pages/favorites.html"><i class="fa fa-heart fa-4x"></i></a></div>
-            <div class="cart-container"><a href="/pages/cart.html"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
+            <div class="favorites-container"><a href="/favorites"><i class="fa fa-heart fa-4x"></i></a></div>
+            <div class="cart-container"><a href="/cart"><i class="fa fa-cart-arrow-down fa-4x"></i></a></div>
         </header>
 
         <div class="sidebar">

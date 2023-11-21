@@ -109,6 +109,42 @@ func PromotionHandler(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func AboutHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("pages/about.html")
+	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func ContactHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("pages/contact.html")
+	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func FavoritesHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("pages/favorites.html")
+	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
+func CartHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles("pages/cart.html")
+	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+}
+
 // func AddHandler(w http.ResponseWriter, r *http.Request) {
 // 	title := r.FormValue("title")
 // 	lname := r.FormValue("lname")
