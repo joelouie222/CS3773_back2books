@@ -171,6 +171,40 @@ li {
     background-image: url(./images/login-box-template.png);
 }
 
+.sellingForm{
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.sellingForm form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.sellingForm h2, .sellingForm p {
+  text-align: center;
+}
+.sellingForm label{
+  display: table-cell;
+}
+
+.sellingForm input {
+  width: 100%; /* Adjust the width as needed */
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.sellingForm textarea {
+  width: 100%; /* Adjust the width as needed */
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  resize: vertical; /* Optional: Allow vertical resizing of the textarea */
+}
+
+
+
 .hidden {
   display: none !important;
 }
@@ -195,16 +229,15 @@ li {
 .about-us {
   display: flex;
   flex-wrap: wrap;
-    background-image: url('/images/y2kwindow-b2bblue.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: antiquewhite; */
-    margin: 0 auto;
-    padding-top: 50px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
+  background-image: url('/images/y2kwindow-b2bblue.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
 
 .contact-us {

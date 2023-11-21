@@ -67,7 +67,6 @@ func FetchHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func FetchBookHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf("fetch book handler called")
 	bookID := r.URL.Query().Get("id")
 	if bookID == "" {
 		http.Error(w, "Book ID is required", http.StatusBadRequest)
