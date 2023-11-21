@@ -33,10 +33,10 @@ func init() {
 }
 
 // Inserts a book into the BOOKS table.
-func createBook(Title string, Lname string, Fname string, Price float32, Publisher string) error {
+func createBook(Title string, Prod string, ISBN string, Date string, Price float32, Format string, Publisher string) error {
 	_, err := db.Exec(
-		"INSERT INTO BOOKS (title, author_lname, author_fname, price, publisher) values (?, ?, ?, ?, ?)",
-		Title, Lname, Fname, Price, Publisher)
+		"INSERT INTO BOOKS (book_title, prod_desc, book_ISBN, BOOK_PUBLISHED_DATE, PRICE, BOOK_FORMAT, NUM_PAGES, PUBLISHER_NAME) values (?, ?, ?, ?, ?, ?, ?, ?)",
+		Title, Prod, ISBN, Date, Price, Format, Publisher)
 
 	if err != nil {
 		log.Fatal(err)
